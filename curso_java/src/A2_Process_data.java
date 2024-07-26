@@ -1,0 +1,50 @@
+
+public class A2_Process_data {
+
+	public static void main(String[] args) {
+		//Exemplo 1
+		
+		int x = 16;
+		int y = x*2;
+		System.out.println(" Exemplo 1");
+		System.out.println("Valor de X é : "+x);
+		System.out.println("Valor de Y é : "+y);
+		
+		double z = x + y;
+		
+		System.out.printf("%n Exemplo 2 %n");
+		System.out.println("Valor de X é : "+x);
+		System.out.println("Valor de Y é : "+y);
+		System.out.println("Valor de Z é : "+z);
+		
+		
+		double b, B, h, area;
+		b = 6.0;
+		B = 8.0;
+		h = 5.0;
+		
+		area = ((b+B)/2)*h;
+		
+		System.out.printf("%n Exemplo 3 %n");
+		System.out.printf("Um trapezio de b = %.2f, B = %2f e h = %.2f é igual a ? %n", b, B, h);
+		System.out.printf("Area é igual a: %.2f", area);
+		
+		System.out.printf("%n Exemplo 4 divisão de inteiros %n");
+		
+		int i , j ;
+		i = 5;
+		j=2;
+		double resultado;
+		
+		resultado = i/j;
+		System.out.println("Resultado direto: "+resultado);
+		resultado = (double) i/j;
+		System.out.println("Resultado com casting (double): "+resultado);
+		
+		
+		
+		
+		
+	}
+
+}

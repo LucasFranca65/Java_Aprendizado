@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import entities.Produtos;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Produtos prod1 = new Produtos();
+		int editQtd = 0;
+		
+		System.out.printf("Nome: ");
+		prod1.name = sc.next();
+		System.out.printf("Saldo: ");
+		prod1.qtd = sc.nextInt();
+		System.out.printf("Preço: ");
+		prod1.price = sc.nextDouble();
+		
+		System.out.println("Nome: "+prod1.name);
+		System.out.println("Saldo: "+prod1.qtd);
+		System.out.println("Preço: R$"+prod1.price);
+		System.out.println("---------------------------------------------------");
+		System.out.printf("O valor Atual do estoque é de %.2f",prod1.TotalValueStock());
+		
+		
+		
+		sc.close();
+	}
+
+}

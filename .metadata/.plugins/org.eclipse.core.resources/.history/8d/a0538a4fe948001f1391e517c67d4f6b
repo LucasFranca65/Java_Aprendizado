@@ -1,0 +1,14 @@
+
+public class Process_data {
+
+	public static void main(String[] args) {
+		//Exemplo 1
+		
+		int x = 16;
+		int y = x*2;
+		
+		System.out.println("Valor de X é : "+x);
+		System.out.println("Valor de Y é : "+y);
+	}
+
+}

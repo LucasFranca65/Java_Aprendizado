@@ -1,0 +1,37 @@
+package aplication;
+
+import java.util.Scanner;
+
+import entities.Conta;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);		
+		
+		System.out.print("Informe o nome do cliente: ");
+		String nameCliente = sc.nextLine();
+		
+		System.out.print("Informe o numero da conta: ");
+		int numero = sc.nextInt();
+		
+		System.out.print("deseja realizar deposito inicial ? S / N: ");
+		char deposito = sc.next().charAt(0);
+		
+		Conta newConta  = new Conta(numero,nameCliente);		
+		
+		if(deposito == 's' || deposito == 'S') {
+			System.out.print("Infome o valor inicial do deposito: ");
+			newConta.deposito(sc.nextDouble());			
+		}
+		
+		System.out.println(newConta.toString());
+		
+	
+		
+		
+		sc.close();
+	}
+
+}

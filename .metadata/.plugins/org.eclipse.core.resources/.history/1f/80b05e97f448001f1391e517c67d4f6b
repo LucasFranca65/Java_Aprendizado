@@ -1,0 +1,33 @@
+
+public class A4_Functions_Matematics {
+
+	public static void main(String[] args) {
+		
+		double x, y, z, A,B,C;
+		x = 3.0;
+		y=4.0;
+		z = -5.0;
+		
+		A= Math.sqrt(x);
+		B= Math.sqrt(y);
+		C = Math.sqrt(25.0);
+		
+		
+		System.out.println("A Raiz Quadrade de "+ x + "é = "+A);
+		System.out.println("A Raiz Quadrade de "+ y + "é = "+B);
+		System.out.println("A Raiz Quadrade de 25 "+ x + "é = "+C);
+		
+		A= Math.pow(x,y);
+		B= Math.pow(x,2);
+		C = Math.pow(5.0,2.0);
+		
+		
+		System.out.println("A Potencia de "+ x +" por" + y +" = "+A);
+		System.out.println("A Potencia de "+ x +" por 2 = "+B);
+		System.out.println("A Potencia de 5 por 2 = "+C);
+		
+		
+		
+	}
+
+}

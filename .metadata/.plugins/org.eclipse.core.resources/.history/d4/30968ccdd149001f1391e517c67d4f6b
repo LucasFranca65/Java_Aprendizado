@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class A8_ProbelmaExemploSemPOO {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("Infome os lados do primeiro triangulo");
+		double lado1t1 = sc.nextDouble();
+		double lado2t1 = sc.nextDouble();
+		double lado3t1 = sc.nextDouble();
+		
+		double pTriangulo1 = (lado1t1 + lado2t1 + lado3t1)/2  ;
+		double areaTriangulo1 = Math.sqrt( pTriangulo1*(pTriangulo1-lado1t1)*(pTriangulo1-lado2t1)*(pTriangulo1-lado3t1) );
+		
+		
+		
+		
+		System.out.println("Infome os lados do segundo triangulo");
+		double lado1t2 = sc.nextDouble();
+		double lado2t2 = sc.nextDouble();
+		double lado3t2 = sc.nextDouble();
+		
+		double pTriangulo2 = (lado1t2 + lado2t2 + lado3t2)/2  ;
+		double areaTriangulo2 = Math.sqrt( pTriangulo2*(pTriangulo2-lado1t2)*(pTriangulo2-lado2t2)*(pTriangulo2-lado3t2) );
+		
+		System.out.println("Area do Triangulo 1 é : "+ areaTriangulo1);
+		System.out.println("Area do Triangulo 1 é : "+ areaTriangulo2);
+		
+		if(areaTriangulo1 > areaTriangulo2) {
+			System.out.println("O maior Triangulo é o 1: "+ areaTriangulo1);
+		}else if(areaTriangulo1 == areaTriangulo2) {
+			System.out.println("Ambos Triangulos possuem a mesma area "+ areaTriangulo1 +" e "+areaTriangulo2 );
+		}else {
+			System.out.println("O maior Triangulo é o 2: "+areaTriangulo2);
+		}
+		
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

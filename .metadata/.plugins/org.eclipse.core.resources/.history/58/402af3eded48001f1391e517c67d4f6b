@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class A3_Input_data {
+
+	public static void main(String[] args) {
+		//Exemplos de input 
+		
+		Scanner sc = new Scanner(System.in);
+		String x ;
+		x = sc.next();
+		sc.close();
+		
+		System.out.println(x);
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
